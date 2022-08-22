@@ -16,7 +16,7 @@ const buttonStyles = (bgColor, color, width, height, colorHover, bgColorHover, b
 `
 
 const Button = forwardRef((props, ref)=> {
-    const { className, bgColor, color, width, height, colorHover, bgColorHover, borderRadius } = props 
+    const { className, bgColor, color, width, height, colorHover, bgColorHover, borderRadius, ...otherProps } = props 
     
     return (
         <button
@@ -28,7 +28,7 @@ const Button = forwardRef((props, ref)=> {
     )
 })
 
-Button.PropTypes = {
+Button.propTypes = {
     className: PropTypes.string,
     bgColor: PropTypes.string,
     color: PropTypes.string,
