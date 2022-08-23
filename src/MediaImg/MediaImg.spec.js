@@ -14,6 +14,6 @@ describe('@components/MediaImg', ()=> {
         // assert 
         expect(MediaImgTest).toBeInTheDocument();
         expect(MediaImgTest).toHaveAttribute('src', 'https://www.algo.com/img')
-        expect(MediaImgTest).toHaveAttribute('alt', 'img')
+        expect(MediaImgTest).toHaveAttribute('alt')
     })
 })
